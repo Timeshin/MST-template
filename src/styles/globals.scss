@@ -1,0 +1,29 @@
+@import '@/variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: $BackgroundAlternative;
+  font-family: var(--gilroy-font);
+
+  .wrapper {
+    width: 95vw;
+    margin: 22px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+a {
+  text-decoration: none;
+}

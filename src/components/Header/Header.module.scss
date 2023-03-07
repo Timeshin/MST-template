@@ -1,0 +1,54 @@
+@import '@/variables';
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .side {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 17px;
+      font-weight: 700;
+      margin: 0 100px;
+    }
+
+    & > span {
+      position: absolute;
+      top: 20%;
+    }
+  }
+
+  .nav {
+    position: relative;
+    display: flex;
+    gap: 55px;
+
+    a {
+      width: 151px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $Base;
+      text-align: center;
+
+      @for $i from 0 through 3 {
+        &:nth-child(#{$i + 1}).active ~ .bottomLine {
+          transform: translateX(calc(206px * $i));
+        }
+      }
+    }
+
+    .bottomLine {
+      position: absolute;
+      bottom: -15px;
+      height: 7px;
+      width: 150px;
+      background: $Accent;
+      transition: all .3s;
+    }
+  }
+}

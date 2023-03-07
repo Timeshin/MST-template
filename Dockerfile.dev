@@ -1,10 +1,10 @@
-FROM node:14-alpine as development
+FROM node:17-alpine as development
 
 ENV NODE_ENV development
 
 WORKDIR /app
 
-COPY package.json .
+COPY package*.json .
 
 RUN npm ci
 

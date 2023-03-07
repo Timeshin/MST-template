@@ -1,0 +1,11 @@
+@import '@/variables';
+
+.footer {
+  width: 100%;
+  color: $textDisable;
+  font-size: 13px;
+
+  span {
+    margin: 0 15px;
+  }
+}
