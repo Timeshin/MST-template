@@ -39,7 +39,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => (
 		<body className={`${roboto.variable} ${gilroy.variable}`}>
 			<div className='wrapper'>
 				<Header />
-				<main>{children}</main>
+				{children}
 				<Footer />
 			</div>
 		</body>

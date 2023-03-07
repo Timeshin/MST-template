@@ -1,3 +1,5 @@
-const MainPage = () => <div>MainPage</div>
+import { MainPageComponent } from '@/components'
+
+const MainPage = () => <MainPageComponent />
 
 export default MainPage

@@ -1,0 +1,21 @@
+'use client'
+import { useState } from 'react'
+
+import Sidebar from './Sidebar/Sidebar'
+
+import classes from './MainPage.module.scss'
+
+const MainPage = () => {
+	const [activeSlideIndex, setActiveSlideIndex] = useState(0)
+
+	return (
+		<main className={classes.mainBlock}>
+			<Sidebar
+				activeSlideIndex={activeSlideIndex}
+				setActiveSlideIndex={setActiveSlideIndex}
+			/>
+		</main>
+	)
+}
+
+export default MainPage

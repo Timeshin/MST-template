@@ -1,0 +1,53 @@
+@import '@/variables';
+
+.Sidebar {
+  margin-left: 30px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    li {
+      position: relative;
+      width: fit-content;
+      font-family: var(--roboto-font);
+      list-style: none;
+      font-size: 13px;
+      font-weight: 300;
+      color: $textDisable;
+      text-transform: uppercase;
+      cursor: pointer;
+      letter-spacing: 0.567739px;
+      transition: all .1s;
+      
+      &:before {
+        content: '';
+        position: absolute;
+        height: 9px;
+        width: 0;
+        background: $BackgroundAccent;
+        bottom: -2px;
+        left: 0;
+        z-index: -1;
+        transition: all .3s;
+      }
+      
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
+      
+      &.active {
+        font-size: 14px;
+        font-weight: 700;
+        color: $Base;
+
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

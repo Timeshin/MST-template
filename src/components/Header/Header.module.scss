@@ -19,7 +19,12 @@
 
     & > span {
       position: absolute;
+      right: 0;
       top: 20%;
+
+      &:first-child {
+        left: 0;
+      }
     }
   }
 
