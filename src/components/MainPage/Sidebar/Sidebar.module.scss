@@ -2,10 +2,12 @@
 
 .Sidebar {
   margin-left: 30px;
+  margin-right: 100px;
 
   ul {
     display: flex;
     flex-direction: column;
+    width: 228px;
     gap: 32px;
 
     li {
@@ -19,6 +21,7 @@
       text-transform: uppercase;
       cursor: pointer;
       letter-spacing: 0.567739px;
+      white-space: nowrap;
       transition: all .1s;
       
       &:before {

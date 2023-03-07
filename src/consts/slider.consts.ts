@@ -1,36 +1,45 @@
+export interface ISliderConstsData {
+	value: string
+	img: string
+	description: string
+}
+
 const sliderConstsData = [
 	{
 		value: 'архитектура',
-		imgUrl: '',
+		img: 'architecture',
 		description:
 			'Оригинальная архитектура жилого комплекса бизнес-класса «Первомайская» формирует современный стиль жизни'
 	},
 	{
 		value: 'Благоустройство',
-		imgUrl: '',
+		img: 'improvement',
 		description:
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+			'Запроектированные большие окна, которые пропускают много солнечного света, наполнят Ваши квартиры теплотой и уютом'
 	},
 	{
 		value: 'Безопастность',
-		imgUrl: '',
-		description: 'Small text'
+		img: 'safety',
+		description:
+			'Современный двор европейского уровня — территория для детей, игр на свежем воздухе и вечерних'
 	},
 	{
 		value: 'Инженерия',
-		imgUrl: '',
+		img: 'engineering',
 		description:
-			'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.'
+			'Оригинальная архитектура жилого комплекса бизнес-класса «Первомайская» формирует современный стиль жизни'
 	},
 	{
 		value: 'Инфраструктура',
-		imgUrl: '',
-		description: ''
+		img: 'infrastructure',
+		description:
+			'Прекрасный вариант для тех, кто предпочитает жить в спокойном районе среди интеллигенции, но при этом чувствовать ритм мегаполиса'
 	},
 	{
 		value: 'Транспортная доступность',
-		imgUrl: '',
-		description: ''
+		img: 'transport',
+		description:
+			'Жилой комплекс «Первомайска» расположен в престижном Академическом районе'
 	}
 ]
 

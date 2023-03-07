@@ -1,0 +1,56 @@
+@import '@/variables';
+
+.infoBlock {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  .content {
+    position: relative;
+    max-width: 435px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .title {
+      font-weight: 700;
+      font-size: 44px;
+      color: $Base;
+      text-transform: uppercase;
+    }
+
+    .description {
+      position: relative;
+      overflow: hidden;
+      font-family: var(--roboto-font);
+      font-size: 18px;
+      font-weight: 400;
+      color: $Base;
+      line-height: 30px;
+      
+      .showTextButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        letter-spacing: 1px;
+        position: absolute;
+        color: #fff;
+        bottom: 0;
+        right: 0;
+        width: 28px;
+        height: 28px;
+        background: $Base;
+      }
+    }
+
+    .slideCounter {
+      position: absolute;
+      bottom: -150px;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 import { useState } from 'react'
 
 import Sidebar from './Sidebar/Sidebar'
+import Slider from './Slider/Slider'
 
 import classes from './MainPage.module.scss'
 
@@ -14,6 +15,7 @@ const MainPage = () => {
 				activeSlideIndex={activeSlideIndex}
 				setActiveSlideIndex={setActiveSlideIndex}
 			/>
+			<Slider activeSlideIndex={activeSlideIndex} />
 		</main>
 	)
 }
