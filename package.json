@@ -1,0 +1,41 @@
+{
+  "name": "mst",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start:dev": "next dev --turbo",
+    "build": "next build",
+    "start:prod": "next start",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@types/node": "18.14.6",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "next": "13.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.58.3",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
+    "eslint-config-next": "^13.2.3",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4"
+  },
+  "lint-staged": {
+    "**/*.+(ts|tsx)": [
+      "eslint . --fix",
+      "prettier --write --config .prettierrc.json"
+    ]
+  }
+}
